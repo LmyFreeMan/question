@@ -1,0 +1,24 @@
+/* authorize.wxss */
+
+page {
+    background: url(https://www.gxfwz36524.com/question/public/persive.png);
+    width: 750rpx;
+    height: 1334rpx;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+  }
+  
+  .authorize {
+    width: 750rpx;
+    margin: 0 auto;
+  }
+  
+  .btnlogin {
+    background-color: #0072ff;
+    color: white;
+    position: absolute;
+    left: 33%;
+    bottom: 100rpx;
+    box-shadow: 0rpx 5rpx 40rpx -10rpx #0072ff;
+  }
+  

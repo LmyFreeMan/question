@@ -1,0 +1,11 @@
+ {
+ "usingComponents": {
+  "i-modal": "../../dist/modal/index",
+    "i-button": "../../dist/button/index",
+    "i-panel": "../../dist/panel/index",
+    "i-action-sheet": "../../dist/action-sheet/index",
+    "i-icon": "../../dist/icon/index",
+    "i-message": "../../dist/message/index"
+    
+  }
+ }

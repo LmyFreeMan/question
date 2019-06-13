@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/auth/auth",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/radio/radio",
+    "pages/test/test",
+    "pages/select/select",
+    "pages/filling/filling",
+    "pages/dowork/dowork",
+    "pages/wrong/wrong",
+    "pages/again/again"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "大唐杯练习题",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#F0F8FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedColor": "#DC143C",
+        "selectedIconPath": "image/ti.png",
+        "iconPath": "image/ti.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "selectedColor": "#DC143C",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+page { 
+   
+    background-image:url('https://www.gxfwz36524.com/question/public/bg.png'); 
+    margin: 0px; 
+    /*下面的是关键的设置100%显示*/ 
+    background-size: 100% 100%; 
+    }  
+    @font-face {font-family: "iconfont";
+      src: url('//at.alicdn.com/t/  ont_1126905_j6np6tvlf1.eot?t=1554425883632'); /* IE9 */
+      src: url('//at.alicdn.com/t/font_1126905_j6np6tvlf1.eot?t=1554425883632#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMcAAsAAAAABxgAAALNAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBfIFuATYCJAMMCwgABCAFhG0HORs3BhFFzMl+JNgxlF9ElwGKAg6gJC51GRbcBM+/a2/3JZk0BQbFpNoFBrtuvloicIB0PKFwszUda0iEiVBdiqtlWbb/tvl2p5cPW+M0SiEkCIekAQII5v7P5fSuQVFg81uWy62NjbFs41EvwHhroHtgm6xAAvKGsQtcwnkIEEEOVUjvcmAkDoM1TQBZmM6ZhsvFMBhWdAi2Zq1BNuDh1Er1jAbrw+/LLzxxoPA01tyhs/tm0vl11NcH2g98JvoI1HwegG0CDVQBBmRyrW8sOs5VoYnQeKPXg8UgqLmSQUBI6rLd6R9PgVis0igAymBewddRrh0CXx+sQwGgAbC8xmAPsHSGB4FGRcVIVJb68HX0x29j3n8Z9e7zlHefko4jL78f9fFj/6WPhY8SP7IOb3nQh6+TtvonVqWMHrll1alQ6pjR20KnVyePGrN99Uk/aWSwvmesNfdszMc9Nn1A5m/Z1NUNue27QzMPz19SPaRs4pH/OyrtvCl52v/k5YEHjZ/ygIU1svNa/vL8p/st/mnkvnZgv02UDFcPIBcsmEwnAMF5/VoP+9+/4VLr7otTYlv/bmwA+PTscWY4IfAN2gfc3fgF/i7Vs8HoClgyKumSZkBTdqceBRDnQQKsUALOd7yc3LsUhJOcghImGzSnCDX6KvBEqgXL6YAIlVabIyVibbJwoMITgIjzAiXGTdDivFGj/4AnxQ+suNoQYXSTPSOVlI5mjEowguAGaUiVdpwyisq3GJ8KxVkmNB2RTZoE13KKxRVWyHMsMOfYE9GgmUpYgsuwKAhqpgxDsRKR2rdtXfcmK6SyMdKDIUWgCAjcgFSIVLTfWoxKn99CsZOCwi2qmuMRYkY6PHBZnB7oSqx6qe7lGuMs5hFCAxojJbAEHlTYOQLq+lEZFBKWZESm5rNRM91XtNaXy+/bBkSwjtYp0WII+ykM0ZguMhM3GgAAAA==') format('woff2'),
+      url('//at.alicdn.com/t/font_1126905_j6np6tvlf1.woff?t=1554425883632') format('woff'),
+      url('//at.alicdn.com/t/font_1126905_j6np6tvlf1.ttf?t=1554425883632') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+      url('//at.alicdn.com/t/font_1126905_j6np6tvlf1.svg?t=1554425883632#iconfont') format('svg'); /* iOS 4.1- */
+    }
+    
+      .wx-icon-successcircle {
+        font-family: "iconfont" !important;
+      font-size: 23px;
+      margin-top: -20px;
+      margin-left: -20px;
+     position: absolute;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      }
+      .wx-icon-error{
+        font-family: "iconfont" !important;
+      font-size: 23px;
+      margin-top: -20px;
+      margin-left: -20px;
+     position: absolute;
+    
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      }
+    .main{
+      width: 90%;
+      height: 80%;
+      margin:0 auto;
+    }
+    
+    view.card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+      }
+    view.header {
+          background-color: #337ab7;
+          color: white;
+          padding: 10px;
+          font-size: 40px;
+       
+          height: 60%;
+      }
+    view.container {
+          padding: 10px;
+           
+          height: 50%;
+      }
+      .sort{
+          width:100%;
+          margin:0 auto;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif
+      }
+      .option{
+       
+       
+        width:100%;
+        word-break:break-all; 
+        height: 50%;
+      
+      }
+     .copyright{
+         width: 100%;
+         text-align: center;
+         bottom: 0;
+     }
+     .count{
+       font-size: 20px;
+     }
+     .i-btn{
+       margin: 0 !important;
+     }
+     .bottom
+     {
+     
+      bottom:0px;
+      left:0px;
+      width: 100%;
+     }
+     .wx-icon-circle:before {
+        content:'';
+        display: inline-block;
+        width:23px;
+        height:23px;
+        margin-top: -20px;
+        margin-left: -20px;
+       position: absolute;
+      border-radius: 50px;
+      border:1px solid 	#DCDCDC;
+    }
+    .te{
+        width:100%;
+    
+    }
+    .pos
+    {
+        position: relative;
+        display: flex;
+    }
+    .wx-icon-blackcircle:before {
+        content:'';
+        display: inline-block;
+        width:23px;
+        height:23px;
+        margin-top: -20px;
+        margin-left: -20px;
+       position: absolute;
+      border-radius: 50px;
+      border:1px solid 	#DCDCDC;
+        background-color: 	black;
+    }
+    
+    
+    .wx-icon-successcircle:before {
+      content: "\e655";
+    }
+    
+    .wx-icon-error:before {
+      content: "\e6c6";
+    }
+      .title{
+        padding: 10px;
+        width:100%;
+        word-break:break-all; 
+        height: 50%; 
+    
+      }

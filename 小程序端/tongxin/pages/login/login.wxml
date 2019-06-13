@@ -1,0 +1,19 @@
+<!-- login.wxml -->
+
+<form bindsubmit="formSubmit">
+  <view class='loginBox'>
+    <view class='bg'>
+      <view class='row1'>
+        <image src='/res/img/logob.png' class='logob' />
+        <image src='/res/img/dot.png' class='dot' />
+      </view>
+      <view class='logint'>登 录</view>
+    </view>
+    <view class='loginForm'>
+      <input class='username' name='username' placeholder="学号" maxlength='10' cursor-spacing='10rpx' focus='true' type='number' />
+      <input class='password' name='password' placeholder="学分制系统密码" password='true' maxlength='18' cursor-spacing='10rpx' confirm-type='登录' />
+      <button class='btn1' form-type='submit'>登 录</button>
+    </view>
+  </view>
+</form>
+<view class='bot'>开发者:李明宇</view>

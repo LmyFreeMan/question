@@ -1,0 +1,101 @@
+.userCard {
+    margin: 20rpx;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  
+  }
+  
+  .avatarBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .abox-name {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    min-width: 300rpx;
+  }
+  
+  .userid {
+    padding-top: 40rpx;
+    padding-left: 300rpx;
+    padding-bottom: 35rpx;
+    font-size: 40rpx;
+    width: 200rpx;
+    max-width: 200rpx;
+    max-height: 50rpx;
+    line-height: 90rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    letter-spacing: 5rpx;
+ 
+    font-weight: 600;
+    align-content: flex-end;
+  }
+  
+  .xh {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 20rpx;
+    padding-right: 60rpx;
+    font-size: 28rpx;
+    font-weight: 400;
+    color: rgb(128, 128, 128);
+  }
+  
+  .zy {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30rpx;
+    font-size: 28rpx;
+    font-weight: 400;
+    color: rgb(128, 128, 128);
+  }
+  
+  .joinDate {
+    font-size: 35rpx;
+  }
+  
+  .avatar {
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 40rpx;
+    padding-left: 40rpx;
+    padding-top: 30rpx;
+  }
+  
+  .logoa {
+    padding: 45rpx 0 25rpx 260rpx;
+  }
+  
+  .logoa image {
+    width: 129rpx;
+    height: 60rpx;
+  }
+  
+  .abox-cnt {
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .joinDays {
+    font-size: 28rpx;
+    padding: 10rpx 0 20rpx 40rpx;
+  }
+  
+  .joinDays text {
+    font-size: 60rpx;
+    width: 260rpx;
+  }
+  
+  .userList {
+    margin: 0 20rpx 20rpx 20rpx;
+    border-radius: 10rpx;
+  }
+  

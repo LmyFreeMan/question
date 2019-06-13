@@ -1,0 +1,77 @@
+
+<view  style="width:{{winWidth}}px;height:{{winheight}}px*1.5;" >
+
+<view class="main">
+
+<view class="card">
+
+ 
+  <view class="container">
+    <view class="title">{{lists[0].title}}</view>
+    <view class="option">
+
+
+<view >
+    <view style="padding: 15px;" class="pos"  bindtap='select' data-value="" data-option='0' data-character="A">
+      <view><icon type="{{icon[0]}}" size="23"></icon></view>
+      <view style="padding-left:5px">A:</view>
+      <view><text  class="te">{{lists[0].questionA}}</text></view>
+    </view> 
+   
+   <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='1' data-character="B">
+      <view><icon type="{{icon[1]}}" size="23"></icon></view>
+      <view style="padding-left:5px">B:</view>
+      <view><text class="te">{{lists[0].questionB}}</text></view>
+    </view> 
+
+
+   <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='2' data-character="C">
+      <view><icon type="{{icon[2]}}" size="23"></icon></view>
+      <view style="padding-left:5px">C:</view>
+      <view><text class="te">{{lists[0].questionC}}</text></view>
+    </view> 
+
+
+    <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='3' data-character="D"> 
+      <view><icon type="{{icon[3]}}" size="23"></icon></view>
+      <view style="padding-left:5px">D:</view>
+      <view><text  class="te">{{lists[0].questionD}}</text></view>
+    </view> 
+
+
+  
+    <view wx:if="{{lists[0].questionE!=null}}" style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='4' data-character="E"> 
+      <view><icon type="{{icon[4]}}" size="23"></icon></view>
+      <view style="padding-left:5px">E:</view>
+      <view><text  class="te">{{lists[0].questionE}}</text></view>
+    </view> 
+
+
+
+ <view wx:if="{{lists[0].questionF!=null}}"  style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='5' data-character="F"> 
+      <view><icon type="{{icon[5]}}" size="23"></icon></view>
+      <view style="padding-left:5px">F:</view>
+      <view><text  class="te">{{lists[0].questionF}}</text></view>
+ </view> 
+
+ 
+  <i-button bind:click="handleClick" type="info">{{show}}</i-button>
+ <view wx:if="{{flag}}">
+ <view ><text >{{lists[0].questionT}}</text></view>
+
+  </view>
+
+
+
+</view>
+
+
+
+ </view>
+  </view>
+</view>
+
+
+</view>
+
+</view>

@@ -1,0 +1,13 @@
+<!--comment.wxml-->
+
+
+<block wx:for="{{lists}}" wx:key="{{index}}"> 
+<view class='commentBox' data-id="{{item.errorid}}" data-type="{{item.sort}}" bindtap="go">
+  <view class='detail color1'>
+ <view class='title'>题目:{{item.title}}</view>
+  <view class='sort'>分类:{{item.type}}</view>
+  <view class='type'>类别:{{item.sort}}</view>
+</view>
+ </view>
+
+ </block> 

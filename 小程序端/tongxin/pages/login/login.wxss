@@ -1,0 +1,153 @@
+/* login.wxss */
+
+.loginBox {
+  display: flex;
+  flex-flow: column;
+  color: white;
+  font-size: 52rpx;
+  font-weight: 600;
+}
+
+.bg {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  height: 500rpx;
+}
+
+.logob {
+  width: 173.4rpx;
+  height: 78.3rpx;
+  padding-left: 70rpx;
+  padding-top: 40rpx;
+}
+
+.dot {
+  width: 436rpx;
+  height: 324rpx;
+  padding-top: -40rpx;
+  padding-left: 40rpx;
+  margin-bottom: 200rpx;
+}
+
+.row1 {
+  z-index: 23;
+  display: flex;
+  flex-flow: row;
+  color: white;
+  padding-left: 35rpx;
+  padding-top: 20rpx;
+}
+
+.logint {
+  position: absolute;
+  top: 150rpx;
+  left: 100rpx;
+  z-index: 66;
+}
+
+.loginForm {
+  position: absolute;
+  top: 290rpx;
+  left: 90rpx;
+  z-index: 88;
+  background: white;
+  font-size: 28rpx;
+  font-weight: 400;
+  height: 700rpx;
+  width: 560rpx;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 5rpx 70rpx -10rpx #0072ff;
+  animation: login 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes login {
+  0% {
+    left: -650rpx;
+    top: 290rpx;
+  }
+
+  10% {
+    left: -576rpx;
+    top: 290rpx;
+  }
+
+  20% {
+    left: -502rpx;
+    top: 290rpx;
+  }
+
+  30% {
+    left: -428rpx;
+    top: 290rpx;
+  }
+
+  40% {
+    left: -354rpx;
+    top: 290rpx;
+  }
+
+  50% {
+    left: -280rpx;
+    top: 290rpx;
+  }
+
+  60% {
+    left: -206rpx;
+    top: 290rpx;
+  }
+
+  70% {
+    left: -132rpx;
+    top: 290rpx;
+  }
+
+  80% {
+    left: -58rpx;
+    top: 290rpx;
+  }
+
+  100% {
+    left: 90rpx;
+    top: 290rpx;
+  }
+}
+
+.username {
+  margin: 100rpx 40rpx 0 50rpx;
+  border-bottom: 1px #636e72 solid;
+  line-height: 200%;
+  letter-spacing: 10rpx;
+  color: #636e72;
+}
+
+.password {
+  margin: 70rpx 40rpx 120rpx 50rpx;
+  border-bottom: 1px #636e72 solid;
+  line-height: 200%;
+  letter-spacing: 5rpx;
+  color: #636e72;
+}
+
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: #0072ff;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bot {
+  border-top:1px solid #ccc;
+  bottom: 0;
+  width: 100%;
+  font-style: italic;
+  font-size: 0vw;
+ 
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+}

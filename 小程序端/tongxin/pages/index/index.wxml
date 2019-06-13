@@ -1,0 +1,12 @@
+<i-button  wx:for="{{questiontitle}}"   bind:click="handleClick" type="primary" size="large" bind:click="handleOpen1" data-title="{{item}}" wx:key="key">{{item}}</i-button>
+<i-button  type="primary" size="large" bind:click="go" >测试</i-button>
+<i-action-sheet visible="{{visible1}}" actions="{{actions1}}" show-cancel bind:cancel="handleCancel1" bind:click="handleClickItem1" >
+
+<view slot="header" style="padding: 16px">
+        <view style="color: #444;font-size: 16px">请选择您需要答题的类型</view>
+      
+    </view>
+</i-action-sheet>
+<i-modal title="出错了~" visible="{{visiblemodel}}" show-cancel="{{cancel}}" bind:ok="clear">
+    <view>请联系管理员</view>
+</i-modal>

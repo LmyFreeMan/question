@@ -1,0 +1,79 @@
+
+<view  style="width:{{winWidth}}px;height:{{winheight}}px*1.5;" >
+
+<view class="main">
+
+<view class="card">
+  <view class="header">
+    <h1>{{index}}</h1>
+    <i-button bind:click="next" type="info" data-operate="{{operate}}" data-id="{{question[index-1].id}}">{{operate}}</i-button>
+  </view>
+ 
+  <view class="container">
+    <view class="title">{{question[index-1].question}}</view>
+    <view class="option">
+
+
+<view >
+    <view style="padding: 15px;" class="pos"  bindtap='select' data-value="" data-option='0' data-character="A">
+      <view><icon type="{{icon[0]}}" size="23"></icon></view>
+      <view style="padding-left:5px">A:</view>
+      <view><text  class="te">{{question[index-1].option.A}}</text></view>
+    </view> 
+   
+   <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='1' data-character="B">
+      <view><icon type="{{icon[1]}}" size="23"></icon></view>
+      <view style="padding-left:5px">B:</view>
+      <view><text class="te">{{question[index-1].option.B}}</text></view>
+    </view> 
+
+
+   <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='2' data-character="C">
+      <view><icon type="{{icon[2]}}" size="23"></icon></view>
+      <view style="padding-left:5px">C:</view>
+      <view><text class="te">{{question[index-1].option.C}}</text></view>
+    </view> 
+
+
+    <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='3' data-character="D"> 
+      <view><icon type="{{icon[3]}}" size="23"></icon></view>
+      <view style="padding-left:5px">D:</view>
+      <view><text  class="te">{{question[index-1].option.D}}</text></view>
+    </view> 
+
+
+  
+    <view wx:if="{{len==5}}" style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='4' data-character="E"> 
+      <view><icon type="{{icon[4]}}" size="23"></icon></view>
+      <view style="padding-left:5px">E:</view>
+      <view><text  class="te">{{question[index-1].option.E}}</text></view>
+    </view> 
+
+
+
+ <view wx:if="{{len==6}}"  style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='5' data-character="F"> 
+      <view><icon type="{{icon[5]}}" size="23"></icon></view>
+      <view style="padding-left:5px">F:</view>
+      <view><text  class="te">{{question[index-1].option.F}}</text></view>
+ </view> 
+
+ 
+ 
+
+
+
+</view>
+
+
+
+ </view>
+  </view>
+</view>
+
+
+</view>
+
+</view>
+<i-modal  visible="{{visiblemodel}}" show-cancel="{{cancel}}" bind:ok="clear">
+    <view>请先答题</view>
+</i-modal>

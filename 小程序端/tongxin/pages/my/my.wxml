@@ -1,0 +1,37 @@
+<view class='userBox'>
+  
+  <!--userCard-->
+  <view class='userCard'>
+    <view class='abox-name'>
+      <view class='avatarBox'>
+        <open-data class="avatar" type="userAvatarUrl" />
+        
+      </view>
+ 
+      <view class='userid' bindtap='avatar'>{{name}}</view>
+    </view>
+    <view class='xh' bindtap='avatar'></view>
+  </view>
+  <!--userList-->
+  <view class='userList'>
+    <i-cell-group>
+    
+      <i-cell is-link url="/pages/wrong/wrong">
+        <i-icon type="activity" size="27" color="black" />错题本
+      </i-cell>
+      <i-cell bindtap='pay'>
+        <i-icon type="praise" size="27" color="black" /> 支持开发者
+      </i-cell>
+      <i-cell bindtap='copy'>
+        <i-icon type="group" size="27" color="black" /> 加入交流群
+      </i-cell>
+      <i-cell is-link url="/pages/core/about/about">
+        <i-icon type="prompt" size="27" color="black" /> 关于大唐杯
+      </i-cell>
+    </i-cell-group>
+  </view>
+  <i-button type="primary" size="default" open-type='share'>
+    <i-icon type="share" size="22" color="white" /> 分享大唐杯练习题</i-button>
+  <!-- <i-button type="error" size="default">
+    <i-icon type="undo" size="22" color="white" /> 退出登录</i-button> -->
+</view>

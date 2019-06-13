@@ -1,0 +1,26 @@
+
+<view  style="width:{{winWidth}}px;height:{{winheight}}px*1.5;" >
+<view class="main">
+<view class="card">
+  <view class="header">
+    <h1>{{index}}</h1>
+    <i-button bind:click="next" type="info" data-operate="{{operate}}">{{operate}}</i-button>
+  </view>
+ 
+  <view class="container">
+    <view class="title">{{question[index-1].question}}</view>
+    <view class="option">
+ </view>
+ <i-button bind:click="handleClick" type="info">{{show}}</i-button>
+ <view wx:if="{{flag}}">
+ <view ><text >{{question[index-1].option.A}}</text></view>
+
+ </view>
+  </view>
+</view>
+</view>
+</view>
+<i-modal  visible="{{visiblemodel}}" show-cancel="{{cancel}}" bind:ok="clear">
+    <view>请先答题</view>
+</i-modal>
+

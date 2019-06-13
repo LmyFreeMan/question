@@ -1,0 +1,100 @@
+
+<view  style="width:{{winWidth}}px;height:{{winheight}}px;" >
+<view class="main">
+  <!-- card选项-->
+<view class="card">
+  <view class="header">
+    <h1>{{index}}</h1>
+     <view class="count " >
+       倒计时: {{counttime}}
+     </view>
+       
+     <i-button  type="error"  bind:click="sub" >我要交卷</i-button>
+  </view>
+  <view class="container">
+    <view class="title">{{question[index-1].question}}</view>
+    <view class="option"><view >
+
+
+   <!-- A选项-->
+    <view style="padding: 15px;" class="pos"  bindtap='select' data-value="" data-option='0' data-character="A">
+      <view><icon type="{{icon[0]}}" size="23"></icon></view>
+      <view style="padding-left:5px">A:</view>
+      <view><text  class="te">{{question[index-1].option.A}}</text></view>
+    </view> 
+   <!-- B选项-->
+   <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='1' data-character="B">
+      <view><icon type="{{icon[1]}}" size="23"></icon></view>
+      <view style="padding-left:5px">B:</view>
+      <view><text class="te">{{question[index-1].option.B}}</text></view>
+    </view> 
+
+   <!-- C选项-->
+   <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='2' data-character="C">
+      <view><icon type="{{icon[2]}}" size="23"></icon></view>
+      <view style="padding-left:5px">C:</view>
+      <view><text class="te">{{question[index-1].option.C}}</text></view>
+    </view> 
+
+   <!-- D选项-->
+    <view style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='3' data-character="D"> 
+      <view><icon type="{{icon[3]}}" size="23"></icon></view>
+      <view style="padding-left:5px">D:</view>
+      <view><text  class="te">{{question[index-1].option.D}}</text></view>
+    </view> 
+
+
+     <!-- E选项-->
+    <view wx:if="{{len>=5}}" style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='4' data-character="E"> 
+      <view><icon type="{{icon[4]}}" size="23"></icon></view>
+      <view style="padding-left:5px">E:</view>
+      <view><text  class="te">{{question[index-1].option.E}}</text></view>
+    </view> 
+
+
+   <!-- F选项-->
+ <view wx:if="{{len==6}}"  style="padding: 15px;" class="pos" bindtap='select' data-value="" data-option='5' data-character="F"> 
+      <view><icon type="{{icon[5]}}" size="23"></icon></view>
+      <view style="padding-left:5px">F:</view>
+      <view><text  class="te">{{question[index-1].option.F}}</text></view>
+ </view> 
+ 
+
+
+
+</view>
+
+
+
+ </view>
+  </view>
+<view class="bottom" >
+   <i-button bind:click="next" type="info" data-operate="{{operate}}" data-id="{{question[index-1].id}}" i-class="i-btn" >{{operate}}</i-button>
+   
+  </view>
+</view>
+  
+<i-modal  visible="{{visiblemode2}}" show-cancel="{{cance2}}" bind:ok="clear1">
+    <view>您已经答过题了</view>
+</i-modal>
+<i-modal  visible="{{visiblemode3}}" show-cancel="{{cance3}}" bind:ok="clear2">
+    <view>答题结束</view>
+</i-modal>
+</view>
+ 
+    
+</view>
+<i-modal  visible="{{visiblemodel}}" show-cancel="{{cancel}}" bind:ok="clear">
+    <view>请先答题</view>
+</i-modal>
+<i-modal  visible="{{visiblemode4}}" show-cancel="{{cance4}}" bind:ok="clear4">
+    <view>交卷成功</view>
+</i-modal>
+
+
+<i-modal  visible="{{visiblemode5}}" show-cancel="{{cance5}}" bind:ok="clear5">
+    <view>答题时间到,已自动提交您的信息</view>
+</i-modal>
+<i-modal  visible="{{visiblemode6}}"  bind:ok="clear6" bind:cancel="clear7">
+    <view>您确定要交卷吗?</view>
+</i-modal>

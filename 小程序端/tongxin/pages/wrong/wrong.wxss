@@ -1,0 +1,40 @@
+/*comment.wxss*/
+
+.commentBox {
+  display: flex;
+  flex-flow: column;
+}
+
+.detail {
+  width: 700rpx;
+  height: 80px;
+  margin: 30rpx 30rpx 20rpx 30rpx;
+  border-radius: 10rpx;
+  line-height: 200%;
+  font-size: 32rpx;
+  box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
+    display: flex;
+    flex-wrap: wrap
+    
+}
+.title{
+  width: 700rpx;
+  overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;/*超出部分文字以...显示*/
+  margin-left: 5px;
+ 
+}
+.sort{
+  width: 80%;
+    overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;/*超出部分文字以...显示*/
+    margin-left: 5px;
+}
+.type{
+      overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;/*超出部分文字以...显示*/
+   float: right
+}
